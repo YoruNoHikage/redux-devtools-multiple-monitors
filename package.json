@@ -1,6 +1,6 @@
 {
   "name": "redux-devtools-multiple-monitors",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Integrate multiple monitors to your redux devtools",
   "main": "lib/index.js",
   "scripts": {
