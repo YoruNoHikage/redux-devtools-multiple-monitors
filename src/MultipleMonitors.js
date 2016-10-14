@@ -24,7 +24,7 @@ export default class MultipleMonitors extends Component {
   }
 
   render() {
-    const { monitorState, children, style = defaultStyle, ...rest } = this.props;
+    const { monitorState, children, style, ...rest } = this.props;
 
     const monitors = children.map((e, i) => cloneElement(e, {
       ...rest,
@@ -39,3 +39,6 @@ export default class MultipleMonitors extends Component {
     );
   }
 }
+MultipleMonitors.defaultProps = {
+  style: defaultStyle,
+};
