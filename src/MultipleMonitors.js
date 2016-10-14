@@ -6,7 +6,7 @@ function childrenMonitorState(props, state, action) {
 
 function reducer(props, state = {}, action) {
   return {
-    childrenMonitorState: childrenMonitorState(props, state.childMonitorState, action)
+    childrenMonitorState: childrenMonitorState(props, state.childMonitorState, action),
   };
 }
 
@@ -29,7 +29,7 @@ export default class MultipleMonitors extends Component {
     const monitors = children.map((e, i) => cloneElement(e, {
       ...rest,
       monitorState: monitorState.childrenMonitorState[i],
-      key: 'monitor' + i
+      key: 'monitor' + i,
     }));
 
     return (
