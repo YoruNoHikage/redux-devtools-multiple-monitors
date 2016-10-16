@@ -15,6 +15,9 @@
   "plugins": [
     "react"
   ],
+  "env": {
+    "browser": true
+  },
   "extends": "./eslint.best-practices",
   "parserOptions": {
     "ecmaVersion": 6,
