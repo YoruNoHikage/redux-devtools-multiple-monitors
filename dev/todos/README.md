@@ -1,5 +1,7 @@
 # Redux Todos Example
 
+Example sources copied from https://github.com/reactjs/redux/tree/4574a8c0fadb6328f8726f7c5b07e0a7f277fb66/examples/todos .
+
 This project template was built with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 ## Available Scripts
