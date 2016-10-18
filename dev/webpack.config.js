@@ -1,6 +1,5 @@
 /* eslint-env node */
 /* global __dirname */
-/* eslint no-console: 0 */
 
 var path = require('path');
 var webpack = require('webpack');
