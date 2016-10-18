@@ -15,8 +15,8 @@ export const ReduxDevTools = createDevTools(
     toggleVisibilityKey='ctrl-h'
     changePositionKey='ctrl-q'
   >
-    <MultipleMonitors toggleable={ true }>
-      <Dispatcher actionCreators={ actions }/>
+    <MultipleMonitors toggles="text">
+      <Dispatcher actionCreators={ actions } startCollapsed={ true }/>
       <LogMonitor />
     </MultipleMonitors>
   </DockMonitor>
