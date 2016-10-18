@@ -22,9 +22,9 @@ import MultipleMonitors from 'redux-devtools-multiple-monitors';
 
 export default createDevTools(
   <DockMonitor toggleVisibilityKey="ctrl-h" changePositionKey="ctrl-q" defaultIsVisible={false}>
-    <MultipleMonitors>
+    <MultipleMonitors toggles="compact">
       <LogMonitor />
-      <Dispatcher />
+      <Dispatcher startCollapsed={ true }/>
     </MultipleMonitors>
   </DockMonitor>
 );
@@ -35,6 +35,14 @@ export default createDevTools(
 Name                  | Description
 -------------         | -------------
 `style`               | If you want to display different monitors in different places, you need to override this property using something like Flexbox
+`toggles`             | If falsy (default), monitors are not toggleable. If `"text"`, monitors are toggleable using big friendly buttons. If `"compact"` or any other truthy value, monitors are toggleable by slim buttons.
+
+In addition, `<MultipleMonitors>` will look for these props on the passed-in children:
+
+Name                  | Description
+-------------         | -------------
+`startCollapsed`      | If truthy, this child monitor will start collapsed (default: `false`).
+
 
 ### Contributing
 

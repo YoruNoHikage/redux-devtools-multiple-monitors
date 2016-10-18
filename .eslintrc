@@ -1,0 +1,33 @@
+{
+  "parser": "babel-eslint",
+  "rules": {
+    "comma-dangle": [1, "always-multiline"],
+    "indent": [ 2, 2, { "SwitchCase": 1 } ],
+    "no-console": 2,
+    "quotes": 0,
+    "react/jsx-key": 2,
+    "react/jsx-pascal-case": 2,
+    "react/jsx-uses-react": 2,
+    "react/jsx-uses-vars": 2,
+    "react/no-direct-mutation-state": 2,
+    "semi": [ 2, "always" ]
+  },
+  "plugins": [
+    "react"
+  ],
+  "env": {
+    "browser": true
+  },
+  "extends": "./eslint.best-practices",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "ecmaFeatures": {
+      "arrowFunctions": true,
+      "blockBindings": true,
+      "jsx": true,
+      "modules": true,
+      "objectLiteralShorthandMethods": true,
+      "objectLiteralShorthandProperties": true
+    }
+  }
+}
