@@ -54,7 +54,8 @@
   },
   "peerDependencies": {
     "react": ">=0.14.0",
-    "redux-devtools": "^3.0.0"
+    "redux-devtools": "^3.0.0",
+    "redux-devtools-themes": "^1.0.0"
   },
   "dependencies": {}
 }
